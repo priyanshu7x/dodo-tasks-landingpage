@@ -9,7 +9,8 @@ import {
   User, 
   RefreshCw,
   Bell,
-  ArrowRight
+  ArrowRight,
+  Sparkles
 } from 'lucide-react';
 import { Button } from './ui/button';
 
@@ -26,9 +27,9 @@ const Features: React.FC = () => {
       description: "Tasks are linked to original discussions, so anyone can refer back to the full context within Slack."
     },
     {
-      icon: <CheckCircle className="h-6 w-6 text-slack-purple" />,
-      title: "Effortless Details",
-      description: "Assign tasks and set deadlines right in your message with intuitive syntax like assign: @username or due: tomorrow."
+      icon: <Sparkles className="h-6 w-6 text-slack-purple" />,
+      title: "AI-Powered Task Creation",
+      description: "Just type '@dodo create a task based on this thread, assign it to @john and due date day after tomorrow' - our AI does the rest."
     },
     {
       icon: <List className="h-6 w-6 text-slack-yellow" />,
@@ -62,10 +63,10 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <span className="bg-dodo-100 text-dodo-700 px-4 py-1.5 rounded-full text-sm font-medium mb-4 inline-block">
-            POWERFUL FEATURES
+            NO BS TASK MANAGEMENT
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 leading-tight">
-            Everything You Need for <span className="text-dodo-500">Seamless</span> Task Management
+            The <span className="text-dodo-500">Slack Task Manager</span> You've Been Looking For
           </h2>
           <p className="text-lg text-gray-600 mb-8">
             Dodo Tasks streamlines your workflow with powerful features designed to keep your team productive and focused.
@@ -97,16 +98,6 @@ const Features: React.FC = () => {
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
-        </div>
-        
-        <div className="mt-16 text-center">
-          <p className="text-dodo-700 font-medium mb-4">Trusted by teams at companies like</p>
-          <div className="flex flex-wrap justify-center gap-8 items-center opacity-70">
-            <span className="text-gray-400 font-bold text-lg">COMPANY</span>
-            <span className="text-gray-400 font-bold text-lg">COMPANY</span>
-            <span className="text-gray-400 font-bold text-lg">COMPANY</span>
-            <span className="text-gray-400 font-bold text-lg">COMPANY</span>
-          </div>
         </div>
       </div>
     </section>

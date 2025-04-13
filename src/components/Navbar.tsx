@@ -14,7 +14,6 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-8">
           <a href="#features" className="text-gray-600 hover:text-dodo-500 transition-colors">Features</a>
           <a href="#how-it-works" className="text-gray-600 hover:text-dodo-500 transition-colors">How It Works</a>
-          <a href="#testimonials" className="text-gray-600 hover:text-dodo-500 transition-colors">Testimonials</a>
         </div>
         <Button className="bg-dodo-500 hover:bg-dodo-600 text-white">Get Started</Button>
       </div>

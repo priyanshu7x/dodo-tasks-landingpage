@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
-              Your Smart Task Assistant <span className="text-dodo-500">Inside Slack</span>
+              Your <span className="text-dodo-500">No BS</span> Task Manager Inside Slack
             </h1>
             
             <p className="text-lg md:text-xl text-gray-600 max-w-xl">

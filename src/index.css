@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,6 +108,11 @@
 
 .glass-card {
   @apply bg-white/90 backdrop-blur-sm border border-gray-100 shadow-lg;
+}
+
+.feature-card {
+  opacity: 0;
+  animation: fade-in 0.6s ease-out forwards;
 }
 
 @keyframes float {

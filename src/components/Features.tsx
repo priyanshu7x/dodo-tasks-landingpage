@@ -85,11 +85,9 @@ const Features: React.FC = () => {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="glass-card rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:translate-y-[-8px] hover:border-dodo-200"
+              className="glass-card rounded-xl p-6 hover:shadow-xl transition-all duration-300 hover:translate-y-[-8px] hover:border-dodo-200 feature-card"
               style={{ 
-                animationDelay: `${index * 100}ms`,
-                animation: "fade-in 0.6s ease-out forwards",
-                opacity: 0
+                animationDelay: `${index * 100}ms`
               }}
             >
               <div className="bg-white rounded-full p-4 w-fit mb-4 shadow-sm border border-gray-100">
@@ -111,13 +109,6 @@ const Features: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      <style jsx>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(10px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
     </section>
   );
 };
